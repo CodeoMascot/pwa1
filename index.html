@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PWA1 Example</title>
-  <link rel="canonical" href="https://codeomascot.github.io/pwa1/" />
-  <link rel="manifest" href="manifest.json">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWA1 Example</title>
+    <link rel="canonical" href="https://codeomascot.github.io/pwa1/" />
+    <link rel="manifest" href="/pwa1/manifest.json">
+
+    <!-- PWA -->
+    <!-- <script defer src="./static/js/app.js"></script> -->
+
+    <!-- ios support -->
+    <!-- <link rel="apple-touch-icon" href="static/img/icons/96.png"> -->
+    <link rel="mask-icon" href="./static/img/site/favicon.svg" color="#FFE1C4">
+    <meta name="apple-mobile-web-app-status-bar" content="#FFE1C4">
+    <meta name="theme-color" content="#FFE1C4">
+
+
 </head>
+
 <body>
-  <h1>PWA App on Github.io</h1>
+    <h1>PWA App on Github.io</h1>
     …
-  <script>
-      if (navigator.serviceWorker) {
-        navigator.serviceWorker.register (
-          '/pwa1/sw.js',
-          {scope: '/pwa1/'}
-        )
-      }
-  </script>
+    <script>
+        if (navigator.serviceWorker) {
+            navigator.serviceWorker.register(
+                '/pwa1/sw.js',
+                { scope: '/pwa1/' }
+            )
+        }
+    </script>
 </body>
+
 </html>
